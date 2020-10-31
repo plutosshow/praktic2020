@@ -6,16 +6,16 @@
     <title>Hungar</title>
     
     <script src="https://kit.fontawesome.com/bbd398afcc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav-bar">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-5 menu__border">
-                            <ul class="menu d-flex justify-content-center ml-auto">
+                        <div class="col-xl-5 d-flex justify-content-end">
+                            <ul class="menu d-flex justify-content-center">
                                 <li class="menu__item">
                                     <a href="#">HOME</a>
                                 </li>
@@ -30,15 +30,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-xl-2">
-                            <ul class="d-flex justify-content-center ml-auto">                            
-                                <li class="menu__item_logo">
-                                    <img src="img/svg/Vector.svg" alt="">   
-                                </li>
-                            </ul>
+                        <div class="col-xl-2 d-flex justify-content-center">
+                                <ul class="menu">                            
+                                    <li class="menu__item_logo">
+                                        <a href="./index.html"><img src="./img/svg/Vector.svg" alt=""></a>   
+                                    </li>
+                                </ul>
                         </div>
-                        <div class="col-xl-5 menu__border">
-                            <ul class="menu d-flex justify-content-center mr-auto">
+                        <div class="col-xl-5 d-flex justify-content-start">
+                            <ul class="menu d-flex justify-content-center">
                                 <li class="menu__item">
                                     <a href="#">MENU</a>
                                 </li>
@@ -59,7 +59,7 @@
         <div class="title">
             <div class="container"> 
                 <div class="row">
-                    <div class="title__rightBorder"></div>
+                    <!-- <div class="title__rightBorder"></div> -->
                     <div class="col-xl-1">
                         <p class="title__shchedule">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p> 
                     </div>
@@ -98,7 +98,7 @@
                                     </li>
                             </div>
                         </ul>
-                        <div class="title__leftBorder"></div> 
+                        <!-- <div class="title__leftBorder"></div>  -->
                     </div>
                 </div>   
             </div>   
@@ -224,7 +224,17 @@
         </div>
     </section>
     <!-- Optional JavaScript -->
-    <script src="vendor/components/jquery/jquery.min.js"></script>
-    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/components/jquery/jquery.min.js"></script>
+    <script src="./vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    $(document).on('scroll', function() {
+    $('.menu__item_logo img').toggleClass('small', $(document).scrollTop() >= 10);
+    $('.menu__item_logo').toggleClass('menu__item_logo-small', $(document).scrollTop() >= 10);
+    $('.menu__item').toggleClass('menu__item-small', $(document).scrollTop() >= 10);
+    $('.nav-bar').toggleClass('nav-bar-small', $(document).scrollTop() >= 10);
+    });
+    </script>
+
 </body>
 </html>

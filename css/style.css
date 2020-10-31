@@ -80,20 +80,43 @@ p   {
     background-size: cover;
 }
 
-.header > div {
-  
+.nav-bar  {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease;  
 }
 
-.menu   {
-
+.nav-bar-small {
+  background: #333333;
 }
 
 .menu__item {
-  padding-top: 40px;
+  padding-top: 40px; /*40px*/
   margin: 0 40px;
+  transition: padding-top 0.3s ease;
 }
-.menu__item_logo {
-  padding-top: 25px;
+
+.menu__item-small {
+  padding-top: 15px; /*15px*/
+}
+
+.menu__item_logo  {
+  padding-top: 25px; /*25px*/
+  transition: padding-top 0.3s ease;
+}
+
+.menu__item_logo-small  {
+  padding-top: 0px; /*0px*/
+}
+
+.menu__item_logo img{
+  width: 150px;
+  transition: width 0.3s ease;
+}
+
+.menu__item_logo img.small {
+  width: 45px;
 }
 
 .menu__item-lt  {
@@ -115,12 +138,12 @@ margin-right: 5.5%;
 }
 
 .menu__border {
-  height: 100px;
+  
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .title  {
-  padding-top: 150px;
+  padding-top: 250px;
 }
 
 .title__shchedule   {
@@ -451,45 +474,43 @@ padding-bottom: 50px;
 
 
 /*media*/
-@media (min-width:576px) {
+
+@media (max-width:768px) {
+  .square {
+    display: none;
+  }
+
+  .title__button  {
+    margin: 0 5px;
+  }
+
+  .title__button_position {
+    width:424px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: 35px auto;
+  }
+
+  .book__input {
+    width: 230px;
+    height: 60px;  
+  }
+
+  .book__button {
+    width: 470px;
+  }
+
+  .formtp {
+    width: 450px;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
 
 }
-@media (min-width: 1200px) {
 
-}
-@media (min-width: 1350) {
-  .title__shchedule {
-    display: block;
-  }
-  .icons  {
-      display: block;
-  }
-}
-@media (min-width: 1500px) {
-  .title__midBorder {
-    display: table-column; 
-  }
-  
-  .title__midBorderEND  {
-    display: grid; 
-  }
-}
-@media (min-width: 1700px) {
-  .title__shchedule {
-    display: block;
-  }
-  .icons  {
-      display: block;
-  }
-  .title__leftBorder  {
-    display: block; 
-  }
-  .title__rightBorder {
-    display: block;
-  }
-}
-
-@media (max-width:645px) {
+@media (max-width:1200px) {
   .square {
     display: none;
   }
