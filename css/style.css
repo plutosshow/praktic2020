@@ -52,21 +52,20 @@ p   {
   text-transform: uppercase;
 }
 
-.img_def  {
-  width: 475px;
-  height: 475px;
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 475px;
+  border-radius: 5px;
   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
 }
 
-.square {
-  width: 226px;
-  height: 226px;
-  border: 20px solid #E8C300;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-  border-radius: 5px;  
-
+.pad-50 {
+  padding-top: 50px;
 }
+
 /*HEADER*/
 .header {
     color: #FFFFFF;
@@ -296,7 +295,7 @@ p   {
   padding-bottom: 100px;
 }
 .about__title {
-  padding-top: 215px;
+  padding-top: 167px;
   text-align: center;
 }
 
@@ -310,21 +309,6 @@ p   {
   text-align: center;
 }
 
-.about__img {
-  background-image: url('../img/png/about-img.png');
-  width: 475px;
-  height: 475px;
-  background-size: cover;
-  border-radius: 5px;
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-  margin: 0 auto;
-}
-
-.img_padding100 {
-  padding-top: 100px;
-}
-
-
 /*OUR TEAM*/
 .team {
   color: #FFFFFF;
@@ -336,27 +320,10 @@ p   {
 
 .cap  {
   padding-top: 50px;
-  padding-bottom: 36px;
-}
-
-.team__img  {
-  background-image: url('../img/png/Rectangle.png');
-  width: 475px;
-  height: 475px;
-  background-size: cover;
-  border-radius: 5px;
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-  margin: 0 auto;
-}
-
-.team__square {
-  position: absolute;
-  left: -60px;
-  top: 113px; 
 }
 
 .team__title  {
-  padding-top: 117px;
+  padding-top: 112px;
   text-align: center;
 }
 
@@ -373,7 +340,6 @@ p   {
 
 /*BOOK*/
 .book {
-padding-top: 100px;
 padding-bottom: 50px;
 }
 
@@ -395,18 +361,8 @@ padding-bottom: 50px;
   margin-bottom: 20px;
 }
 
-.book__img {
-  margin-left: 80px;
-}
-
-.book__square  {
-  position: absolute;
-  left: 305px;
-  top: 113px;  
-}
-
 .book__title  {
-  padding-top: 62px;
+  padding-top: 170px;
 }
 
 .book__par  {
@@ -427,17 +383,6 @@ padding-bottom: 50px;
   margin: 0 auto;
 }
 
-.content_img  {
-  background-image: url('../img/png/about-img2.png');
-  width: 475px;
-  height: 475px;
-  background-size: cover;
-  border-radius: 5px;
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-  margin: 0 auto;
-}
-
-
 /*SPECIALTIES*/
 .specialties  {
   color: #FFFFFF;
@@ -447,93 +392,7 @@ padding-bottom: 50px;
   padding-bottom: 100px;
 }
 
-.specialties__img  {
-  background-image: url('../img/png/Rectangle2.png');
-  width: 475px;
-  height: 475px;
-  background-size: cover;
-  border-radius: 5px;
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-  margin: 0 auto;
-}
-
-
 /*media*/
-
-@media (max-width:768px) {
-  .square {
-    display: none;
-  }
-
-  .title__button  {
-    margin: 0 5px;
-  }
-
-  .title__button_position {
-    width:424px;
-    height: 60px;
-    left: 0;
-    right: 0;
-    margin: 35px auto;
-  }
-
-  .book__input {
-    width: 230px;
-    height: 60px;  
-  }
-
-  .book__button {
-    width: 470px;
-  }
-
-  .formtp {
-    width: 450px;
-    left: 0;
-    top: 0;
-    margin: 0 auto;
-  }
-
-}
-
-@media (max-width:1200px) {
-  .square {
-    display: none;
-  }
-
-  .title__button  {
-    margin: 0 5px;
-  }
-
-  .title__button_position {
-    width:424px;
-    height: 60px;
-    left: 0;
-    right: 0;
-    margin: 35px auto;
-  }
-
-  .book__input {
-    width: 230px;
-    height: 60px;  
-  }
-
-  .book__button {
-    width: 470px;
-  }
-
-  .formtp {
-    width: 450px;
-    left: 0;
-    top: 0;
-    margin: 0 auto;
-  }
-
-  
-
-}
-
-
-
 @media (min-width:768px) {
   .icons  {
     display: block;
@@ -541,6 +400,82 @@ padding-bottom: 50px;
   
   .title__shchedule {
     display: block;
+  }
+}
+
+@media (max-width:1200px) {
+  .img  {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width:995px)  {
+
+  .img  {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width:768px) {
+  .img  {
+    padding-top: 0;
+  }
+
+  .about  {
+    padding-bottom: 50px;
+  }
+
+  .specialties  {
+    padding-bottom: 50px;
+  }
+  
+  .about__title {
+    padding-top: 50px;
+  }
+
+  .team__title  {
+    padding-top: 25px; 
+  }
+
+  .team {
+    padding-bottom: 50px;
+  }
+
+  .book {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .book__title  {
+    padding-top: 50px;
+  }
+
+  .title__button  {
+    margin: 0 5px;
+  }
+
+  .title__button_position {
+    width:424px;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: 35px auto;
+  }
+
+  .book__input {
+    width: 230px;
+    height: 60px;  
+  }
+
+  .book__button {
+    width: 470px;
+  }
+
+  .formtp {
+    width: 450px;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
   }
 }
 
