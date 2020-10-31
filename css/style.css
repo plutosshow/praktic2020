@@ -119,14 +119,6 @@ p   {
   width: 45px;
 }
 
-.menu__item-lt  {
-margin-left: 5.5%;    
-}
-
-.menu__item-rt  {
-margin-right: 5.5%;  
-}
-
 .menu__item a{
   line-height: 18px;
   color: #FFFFFF;
