@@ -453,7 +453,10 @@ padding-bottom: 50px;
 }
 
 .delicious__menu_item  {
+  width: 70px;
   margin-right: 50px;
+  padding: 10px 0;
+  border-right: 1px solid gray;
 }
 
 .delicious__menu_item  a{
