@@ -15,24 +15,6 @@ position: static;
   max-width: 1440px;
 }
 
-h1  {
-  font-family: 'Tenor Sans';
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 48px;
-  /* or 133% */
-  text-align: center;
-  text-transform: uppercase;  
-}
-
-h2  {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-}
-
 p   {
   font-family: 'Open Sans';
   font-style: normal;
@@ -98,6 +80,25 @@ p   {
   top: 30%;
   border: 20px solid #E8C300;
   z-index: 3;
+}
+
+.h1_text  {
+  text-align: center;
+  font-family: 'Tenor Sans';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+  text-align: center;
+  text-transform: uppercase;  
+}
+
+.h2_text  {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 /*HEADER*/
@@ -336,7 +337,7 @@ position: relative;
 }
 .about__title {
   padding-top: 167px;
-  text-align: center;
+  padding-bottom: 10px;
 }
 
 .about__pretitle  {
@@ -364,7 +365,15 @@ position: relative;
 
 .team__title  {
   padding-top: 112px;
+  padding-bottom: 10px;
   text-align: center;
+  font-family: 'Tenor Sans';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  /* or 133% */
+  text-align: center;
+  text-transform: uppercase;  
 }
 
 .team__pretitle {
@@ -403,6 +412,7 @@ padding-bottom: 50px;
 
 .book__title  {
   padding-top: 170px;
+  padding-bottom: 10px;
 }
 
 .book__par  {
@@ -434,6 +444,12 @@ padding-bottom: 50px;
 /*DELICIOUS*/
 .delicious__title {
   padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.delicious__pretitle  {
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .delicious__menu_item  {
