@@ -431,6 +431,18 @@ padding-bottom: 50px;
   background-size: cover;
   padding-bottom: 100px;
 }
+/*DELICIOUS*/
+.delicious__title {
+  padding-top: 100px;
+}
+
+.delicious__menu_item  {
+  margin-right: 50px;
+}
+
+.delicious__menu_item  a{
+  color: black;
+}
 
 /*media*/
 @media (min-width:768px) {
